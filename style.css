@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7ecd0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#puzzlegrid {
+    border: 4px solid #336699;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#puzzlegrid td {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #336699;
+    background-image: url('example.png'); /* Replace with your actual 360x360 image filename */
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+/* 90px Step Translations for the 4x4 background image slices */
+.tile1  { background-position: 0px 0px; }
+.tile2  { background-position: -90px 0px; }
+.tile3  { background-position: -180px 0px; }
+.tile4  { background-position: -270px 0px; }
+.tile5  { background-position: 0px -90px; }
+.tile6  { background-position: -90px -90px; }
+.tile7  { background-position: -180px -90px; }
+.tile8  { background-position: -270px -90px; }
+.tile9  { background-position: 0px -180px; }
+.tile10 { background-position: -90px -180px; }
+.tile11 { background-position: -180px -180px; }
+.tile12 { background-position: -270px -180px; }
+.tile13 { background-position: 0px -270px; }
+.tile14 { background-position: -90px -270px; }
+.tile15 { background-position: -180px -270px; }
+.tile16 { background: white; cursor: default; }
+
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
